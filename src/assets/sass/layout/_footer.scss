@@ -1,0 +1,51 @@
+.footer{
+    padding: 16px;
+    background-color: var(--color-bg2);
+
+    &__logo{
+        padding-top: 32px;
+        display: flex;
+        justify-content: flex-end;
+        border-bottom: solid 0.2px var(--color-details);
+        padding-bottom: 16px;
+
+        & path{
+            fill: var(--color-text);
+        }
+    }
+
+    &__list{
+        list-style: none;
+        padding: 0;
+        margin-bottom: 32px;
+
+            &--socials{
+                display: flex;
+                
+                & > li{
+                    margin-right: 16px;
+                    margin-top: 16px;
+                }
+            }
+            &--app{
+                padding-bottom: 32px;
+                border-bottom: solid 0.2px var(--color-details);
+            }
+    }
+    &__copy{
+        display: flex;
+        justify-content: space-between;
+        &__dwm path:first-child{
+            fill: var(--color-text);
+        }
+    }
+    &__app__title {
+        font-size: 16px;
+    }
+
+    &__item{
+        margin-bottom: 8px;
+    }
+
+}
+

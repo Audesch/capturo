@@ -7,6 +7,7 @@ body{
     font-weight: var(--font-regular);
     color: var(--color-text);
     background-color: var(--color-bg);
+    margin: 0;
 }
 
 /* MOBILE TYPE */
@@ -40,12 +41,13 @@ body{
     font-family: proxima-nova,sans-serif;
 }
 .outline{
-    font-size: 12px;
-    font-weight: var(--font-regular);
+    font-size: 14px;
+    font-weight: var(--font-semibold);
     letter-spacing: 2%;
+    text-transform: uppercase;
 }
 
 .copyright{
     font-size: 14px;
-    color: var(--color-details);
+    color: var(--color-text);
 }

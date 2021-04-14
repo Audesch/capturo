@@ -5,4 +5,21 @@
     &--menu{
         font-size: 23px;
     }
+
+    &--socials{
+        width: 60px;
+        height: 60px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+
+        & svg{
+            fill: var(--color-details);
+
+            &:hover{
+                fill: var(--color-text);
+                transition: all 0.2s;
+            }
+        }
+    }
 }
