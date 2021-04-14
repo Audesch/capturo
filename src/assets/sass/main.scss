@@ -1,20 +1,14 @@
-/* HERE WRITE THINGS TO DO
-
-  -- SETUP
-  OK  -- fichiers sass 
-  OK  -- metashare + images 
-  OK  -- add favicon
-  OK  -- liens typo
-  OK  -- repo github
-    -- variables 
-    -- type (mobile, tablette, desktop)
-    -- dark mode (JS + SASS)
-
-  -- VERSION MOBILE
-    -- setup burger menu
-
+/*!
+***
+* TFA Project – Capturo
+***
+* Option DWM – HEAJ Namur
+*
+* version 1.0
+* author: Aude Schaff <audeschaff.be>
+*
+***
 */
-
 
 @use 'components/buttons';
 @use 'components/grids';
@@ -24,4 +18,25 @@
 @use 'layout/header';
 @use 'layout/footer';
 
-@use 'utils/variables';
+@use 'utils/variables'; 
+
+/* HERE WRITE THINGS TO DO
+
+  -- SETUP
+  OK  -- fichiers sass 
+  OK  -- metashare + images 
+  OK  -- add favicon
+  OK  -- liens typo
+  OK  -- repo github
+  OK  -- variables 
+    -- type (mobile, tablette, desktop)
+    -- dark mode (JS + SASS)
+
+  -- VERSION MOBILE
+    -- setup burger menu
+
+
+  -- BEFORE COMMIT
+    -- W3C verificator
+    -- retina
+*/
