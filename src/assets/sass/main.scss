@@ -1,0 +1,27 @@
+/* HERE WRITE THINGS TO DO
+
+  -- SETUP
+  OK  -- fichiers sass 
+  OK  -- metashare + images 
+  OK  -- add favicon
+  OK  -- liens typo
+  OK  -- repo github
+    -- variables 
+    -- type (mobile, tablette, desktop)
+    -- dark mode (JS + SASS)
+
+  -- VERSION MOBILE
+    -- setup burger menu
+
+*/
+
+
+@use 'components/buttons';
+@use 'components/grids';
+@use 'components/menu';
+@use 'components/type';
+
+@use 'layout/header';
+@use 'layout/footer';
+
+@use 'utils/variables';
