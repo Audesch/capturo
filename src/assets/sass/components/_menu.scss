@@ -1,0 +1,126 @@
+/* .list--menu{
+    display: none;
+    }
+    .list__el{
+        margin-bottom: 18px;
+    }
+
+    .menu__btn{
+        z-index: 1; 
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
+        height: 37px;
+    }
+    
+    .menu__darkbtn{
+        display: none;
+        background: transparent;
+        border: 1px solid #171E24;
+        padding: 11px 11px;
+    }
+    
+    
+    
+    body[data-menu] .menu__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: var(--color-bg);
+        transition: all 200ms ease-in-out;
+        padding: 0 18px;
+    }
+    
+    body[data-menu] .link--menu{
+        font-size: 28px;
+        line-height: 1.4;
+    }
+    .menu__burger{
+        cursor: pointer;
+    }
+    .menu__burger path{
+        transition: all 200ms ease-in-out;
+        color: var(--color-text);
+    }
+    
+    body[data-menu] path {
+        fill: var(--color-text);
+    }
+
+    body[data-menu] .path_1{
+        transform: rotate(45deg) translateX(5px) translateY(-12px);
+    }
+    
+    body[data-menu] .path_2{
+        opacity: 0;
+    }
+    
+    body[data-menu] .path_3{
+        transform: rotate(-45deg) translateX(-13px) translateY(17px);
+    }
+    
+    body[data-menu] .menu__darkbtn{
+        display: flex;
+        position: fixed;
+        bottom: 36px;
+        left: 18px;
+    }
+
+ */
+
+ .menu{
+     margin: 32px 16px 0px 16px;
+     display: flex;
+     justify-content: space-between;
+
+
+    &__list{
+        display: none;
+        list-style: none;
+    }
+    &__item{
+        margin-bottom: 18px;
+    }
+ }
+
+ body[data-menu] .menu { //je peux faire ça ?
+    &__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: -16px;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background: var(--color-bg);
+        padding: 0 16px;
+    }
+    &__item{
+        margin-left: 32px;
+    }
+    &__darkbtn{
+        display: flex;
+        position: fixed;
+        bottom: 32px;
+        right: 16px;
+        }
+}
+
+body[data-menu] .path_1{
+    transform: rotate(45deg) translateX(5px) translateY(-12px);
+}
+
+body[data-menu] .path_2{
+    opacity: 0;
+}
+
+body[data-menu] .path_3{
+    transform: rotate(-45deg) translateX(-13px) translateY(17px);
+}

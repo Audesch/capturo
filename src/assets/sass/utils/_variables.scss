@@ -37,11 +37,14 @@ font-style: normal;
 
 :root{
     --color-bg: #FFFFFF;
+    --color-bg2: #F2F2F2;
     --color-text: #323232;
     --color-text-offset: #FFFFFF;
     --color-primary: #0442FF;
     --color-secondary: #0029A6;
     --color-state: #202E51;
+    --color-details: #545454;
+
     --font-light: 300;
 	--font-regular: 400;
 	--font-semibold: 600;
@@ -51,27 +54,33 @@ font-style: normal;
 @media(prefers-color-scheme: dark){
     :root{
         --color-bg: #323232;
+        --color-bg2: #323232;
         --color-text: #FFFFFF;
         --color-text-offset: #323232;
         --color-primary: #FFFFFF;
         --color-secondary: #FFFFFF;
         --color-state: #FFFFFF;
+        --color-details: #FFFFFF;
     }
 }
 
 [data-theme= 'light']{
     --color-bg: #FFFFFF;
+    --color-bg2: #F2F2F2;
     --color-text: #323232;
     --color-text-offset: #FFFFFF;
     --color-primary: #0442FF;
     --color-secondary: #0029A6;
     --color-state: #202E51;
+    --color-details: #545454;
 }
 [data-theme= 'dark']{
     --color-bg: #323232;
+    --color-bg2: #323232;
     --color-text: #FFFFFF;
     --color-text-offset: #323232;
     --color-primary: #FFFFFF;
     --color-secondary: #FFFFFF;
     --color-state: #FFFFFF;
+    --color-details: #FFFFFF;
 }

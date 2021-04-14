@@ -1,2 +1,51 @@
 @use "utils/variables" as v;
 
+body{
+    font-family: proxima-nova,sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: var(--font-regular);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+/* MOBILE TYPE */
+
+.title{
+    font-family: 'Darker Grotesque', sans-serif;
+    line-height: 1;
+
+    &--big{
+        font-size: 38px;
+        font-weight: var(--font-regular);
+    }
+    &--middle{
+        font-size: 38px;
+        font-weight: var(--font-bold);
+    }
+    &--small{
+        font-size: 38px;
+        font-weight: var(--font-bold);
+    }
+}
+
+.highlight{
+    font-size: 38px;
+    font-weight: var(--font-bold);
+}
+
+.p-bold{
+    font-size: 16px;
+    font-weight: var(--font-semibold);
+    font-family: proxima-nova,sans-serif;
+}
+.outline{
+    font-size: 12px;
+    font-weight: var(--font-regular);
+    letter-spacing: 2%;
+}
+
+.copyright{
+    font-size: 14px;
+    color: var(--color-details);
+}

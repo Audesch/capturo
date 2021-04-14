@@ -14,6 +14,7 @@
 @use 'components/grids';
 @use 'components/menu';
 @use 'components/type';
+@use 'components/links';
 
 @use 'layout/header';
 @use 'layout/footer';
@@ -29,8 +30,8 @@
   OK  -- liens typo
   OK  -- repo github
   OK  -- variables 
-    -- type (mobile, tablette, desktop)
-    -- dark mode (JS + SASS)
+  OK  -- type (mobile)
+  OK  -- dark mode (JS/OK + SASS/OK)
 
   -- VERSION MOBILE
     -- setup burger menu
