@@ -41,4 +41,4 @@ function toggleNavigation() {
 
 // DATE 
 var year = new Date().getFullYear();
-document.querySelector(".copyright").innerHTML = "Aude © " + year;
+document.querySelector(".copyright").innerHTML = "Aude Schaff © " + year;

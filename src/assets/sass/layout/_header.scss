@@ -1,0 +1,18 @@
+.hero{
+    margin-top: 20vh;
+
+    .hero__left{
+        margin: 3.2vw;
+    }
+    .hero__right__video{
+        margin-top: 20vh;
+        background-color: var(--color-primary);
+        height: 80vh;
+        width: 100%;
+    }
+}
+
+.headline{
+    padding: 8px 0px 32px 0px;
+    width: 80vw;
+}
