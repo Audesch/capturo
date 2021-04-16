@@ -17,26 +17,24 @@ body{
     line-height: 1;
 
     &--big{
-        font-size: 38px;
+        font-size: 51px;
         font-weight: var(--font-light);
         margin: 0;
     }
     &--middle{
         font-size: 38px;
-        font-weight: var(--font-bold);
+        font-weight: var(--font-semibold);
+        margin: 0;
     }
     &--small{
-        font-size: 38px;
-        font-weight: var(--font-bold);
+        font-size: 29px;
+        font-weight: var(--font-semibold);
+        color: var(--color-primary);
+        margin: 0;
     }
     &--bold{
         font-weight: var(--font-semibold);
     }
-}
-
-.highlight{
-    font-size: 38px;
-    font-weight: var(--font-bold);
 }
 
 .headline{

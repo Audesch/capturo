@@ -1,11 +1,30 @@
+@use "utils/variables" as v;
+
  .menu{
-     margin: 32px 3.2vw 0vw 3.2vw;
+     margin: 0px 6.4vw 0vw 6.4vw;
+     padding-top: 32px;
+     background-color: var(--color-bg);
      display: flex;
      justify-content: space-between;
+     position: relative;
+     z-index: 2;
+     
+     &::after{
+        content: "";
+        width: 100vw;
+        background-color: var(--color-text);
+        height: 1px;
+        position: absolute;
+        left: -7.25%;
+        top: 96px;
+        opacity: 0.15;
+        z-index: 0;
+    }
 
     &__logo{
         & path{
             fill: var(--color-text);
+            z-index: 2;
     }
     }
 

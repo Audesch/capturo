@@ -1,0 +1,10 @@
+@use "utils/variables" as v;
+
+.section--app{
+    padding: 3rem 4vw 6rem 4vw;
+    background-color: var(--color-bg2);
+
+    > a {
+        margin-left: 4vw;
+    }
+}

@@ -1,14 +1,56 @@
+@use "utils/variables" as v;
+
+.header{
+    background-color: var(--color-bg);
+    position: relative;
+
+    &::before{
+        content: "";
+        height: 100vh;
+        background-color: var(--color-text);
+        width: 1px;
+        position: absolute;
+        left: 4vw;
+        top: 0;
+        opacity: 0.15;
+    }
+    &::after{
+        content: "";
+        height: 100vh;
+        background-color: var(--color-text);
+        width: 1px;
+        position: absolute;
+        right: 4vw;
+        top: 0;
+        opacity: 0.15;
+    }
+}
 .hero{
     margin-top: 20vh;
 
-    .hero__left{
-        margin: 3.2vw;
+    &__left{
+        margin: 6.4vw;
     }
-    .hero__right__video{
-        margin-top: 20vh;
-        background-color: var(--color-primary);
+    &__right__video{
+        margin-top: 10vh;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        object-position: center;
         height: 80vh;
         width: 100%;
+        position: relative;
+
+        &::before{
+            content: "";
+            height: 100%;
+            background-color: var(--color-text-offset);
+            width: 10px;
+            position: absolute;
+            left: 4vw;
+            top: 0;
+            opacity: 0.15;
+            
+        }
     }
 }
 

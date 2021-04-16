@@ -18,6 +18,12 @@
 
 @use 'layout/header';
 @use 'layout/footer';
+@use 'layout/presentation';
+@use 'layout/steps';
+@use 'layout/features';
+@use 'layout/app';
+
+
 
 @use 'utils/variables'; 
 
@@ -32,17 +38,29 @@
   OK  -- variables 
   OK  -- type (mobile)
   OK  -- dark mode (JS/OK + SASS/OK)
-    -- check état focus
-    -- état hover et visité liens footer
+  OK  -- check état focus
+  OK  -- état hover et visité liens footer
 
   -- VERSION MOBILE
   OK  -- setup burger menu
-  -- setup footer
-  -- add aria labels svg - accessibility
+  OK  -- setup footer
+  OK -- ajouter pointer burger menu
+  -- Section steps
+  -- Section avantages
+  -- Section app
+  -- add max-width
+  -- rectifier timeline
 
-
-
-  -- BEFORE COMMIT
+    -- BEFORE COMMIT
     -- W3C verificator
     -- retina
+
+  -- PLUS
+   -- add aria labels svg - accessibility
+   -- Section présentation -> parallax (possible en css)
+   -- Anim Hover link footer
+   -- Modif Dark mode btn
+   -- Anim lignes grilles
+   -- Anim svg steps 
+   -- Changer taille menu burger + fermeture au click btn 
 */
