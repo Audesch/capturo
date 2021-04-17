@@ -20,6 +20,7 @@ body{
         font-size: 51px;
         font-weight: var(--font-light);
         margin: 0;
+        letter-spacing: -1px;
     }
     &--middle{
         font-size: 38px;
@@ -56,4 +57,36 @@ body{
 
 .copyright{
     font-size: 14px;
+}
+
+@media (min-width: 768px){
+    body{
+        font-size: 17px;
+    }
+    .title{
+        &--big{
+            font-size: 71px;
+        }
+        &--middle{
+            font-size: 53px;
+        }
+        &--small{
+            font-size: 40px;
+        }
+    }
+    .headline{
+        font-size: 17px;
+        
+    }
+    .p-bold{
+        font-size: 17px;
+    
+    }
+    .outline{
+        font-size: 16px;
+    }
+    
+    .copyright{
+        font-size: 14px;
+    }
 }

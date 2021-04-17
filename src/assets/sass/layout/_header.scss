@@ -12,7 +12,7 @@
         position: absolute;
         left: 4vw;
         top: 0;
-        opacity: 0.15;
+        opacity: 0.25;
     }
     &::after{
         content: "";
@@ -22,7 +22,7 @@
         position: absolute;
         right: 4vw;
         top: 0;
-        opacity: 0.15;
+        opacity: 0.25;
     }
 }
 .hero{
@@ -30,31 +30,66 @@
 
     &__left{
         margin: 6.4vw;
+        position: relative;
+
+        &::after{
+            content: "";
+            width: 100vw;
+            background-color: #FFFFFF;
+            height: 1px;
+            position: absolute;
+            left: -7.25%;
+            bottom: -85vh;
+            opacity: 0.15;
+            z-index: 3;
+        }
+
     }
     &__right__video{
         margin-top: 10vh;
         background-repeat: no-repeat;
         object-fit: cover;
         object-position: center;
-        height: 80vh;
+        height: 70vh;
         width: 100%;
         position: relative;
-
-        &::before{
-            content: "";
-            height: 100%;
-            background-color: var(--color-text-offset);
-            width: 10px;
-            position: absolute;
-            left: 4vw;
-            top: 0;
-            opacity: 0.15;
-            
-        }
+        z-index: 1;
+    }
+    &::before{
+        content: "";
+        height: 99.4%;
+        background-color: #FFFFFF;
+        width: 1px;
+        position: absolute;
+        left: 4vw;
+        top: 0;
+        opacity: 0.15;
+        z-index: 2;
+    }
+    &::after{
+        content: "";
+        height: 99.4%;
+        background-color: #FFFFFF;
+        width: 1px;
+        position: absolute;
+        right: 4vw;
+        top: 0;
+        opacity: 0.15;
+        z-index: 2;
     }
 }
 
 .headline{
     padding: 8px 0px 32px 0px;
     width: 80vw;
+}
+
+@media (min-width: 768px){
+    .hero__left{
+        max-width: 80vw;
+
+        &__description{
+            max-width: 55vw;
+        }
+    }
 }

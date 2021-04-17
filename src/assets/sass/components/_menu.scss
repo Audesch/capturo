@@ -7,7 +7,7 @@
      display: flex;
      justify-content: space-between;
      position: relative;
-     z-index: 2;
+     z-index: 3;
      
      &::after{
         content: "";
@@ -31,6 +31,7 @@
     &__list{
         display: none;
         list-style: none;
+        z-index: 5;
     }
     &__item{
         margin-bottom: 18px;
@@ -51,13 +52,16 @@
         padding: 0 16px;
     }
     &__item{
-        margin-left: 32px;
+        display: flex;
+        justify-content: center;
+        margin-left: -32px;
     }
     &__darkbtn{
         display: flex;
         position: fixed;
-        bottom: 32px;
-        right: 16px;
+        bottom: 4vw;
+        right: 4vw;
+        z-index: 6;
         }
 }
 
@@ -72,3 +76,24 @@ body[data-menu] .path_2{
 body[data-menu] .path_3{
     transform: rotate(-45deg) translateX(-13px) translateY(17px);
 }
+
+@media (min-width: 768px){ 
+    .menu{
+        display: flex;
+        align-items: center;
+
+        &::after{
+            top: 112px;
+        }
+        &__list{
+            display: flex;
+            > *{
+                margin-left: 32px;
+            }
+
+        }
+        &__btn{
+            display: none;
+        }
+    }
+} 

@@ -50,3 +50,11 @@
         border-radius: 20px; 
     }
 }
+
+@media (min-width: 768px){ 
+    .link{
+        &--menu{
+            font-size: 17px;
+        }
+    }
+}
