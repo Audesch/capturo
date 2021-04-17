@@ -1,37 +1,18 @@
 @use "utils/variables" as v;
 
 .steps{
-    margin: 0 8vw 0vw 16vw;
+    margin: 0 8vw 0vw 8vw;
     margin-top: 6rem;
     
     position: relative;
     
-    > *{
-        margin-bottom: 6rem;
-    }
+    &__el{
+        margin-bottom: 9rem;
 
-    &__timeline{
-        position: relative;
-        :before{
-            content: "";
+        &__img{
             background-color: blue;
-            width: 1px;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            right: 85vw;
-        }
-
-        display: flex;
-        flex-direction: column;
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: -10vw;
-
-        &__nbr{
-            background-color: tomato;
-            margin-bottom: 30vw;
+            height: 210px;
+            width: 100%;
         }
     }
 
@@ -41,10 +22,39 @@
         width: 30px;
         margin-bottom: 1rem;
     }
-    &__img{
-        background-color: blue;
-        height: 210px;
-        width: 100%;
-    }
 
 }
+
+@media (min-width: 768px){ 
+
+    .section__intro{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    .steps{
+        margin: 6rem 4vw 0vw 4vw;
+
+        &__el{
+            display: flex;
+            align-items: center;
+
+            &__container{
+                max-width: 50%;
+            }
+            &__img{
+                height: 285px;
+                margin-left: 34px;
+            }
+            &--tuto{
+                display: flex;
+                flex-direction: row-reverse;
+
+                & .steps__el__img{ /*! CHANGE THIS */
+                    margin-left: 0%;
+                    margin-right: 34px;
+                }
+            }
+        }
+    }
+
+ } 

@@ -6,6 +6,10 @@
 
     &--menu{
         font-size: 23px;
+
+        &:hover{
+            border-bottom: 1px solid var(--color-text);
+        }
     }
 
     &--socials{

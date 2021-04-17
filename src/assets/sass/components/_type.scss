@@ -83,7 +83,39 @@ body{
     
     }
     .outline{
-        font-size: 16px;
+        font-size: 17px;
+    }
+    
+    .copyright{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px){
+    body{
+        font-size: 18px;
+    }
+    .title{
+        &--big{
+            font-size: 76px;
+        }
+        &--middle{
+            font-size: 57px;
+        }
+        &--small{
+            font-size: 43px;
+        }
+    }
+    .headline{
+        font-size: 18px;
+        
+    }
+    .p-bold{
+        font-size: 18px;
+    
+    }
+    .outline{
+        font-size: 18px;
     }
     
     .copyright{

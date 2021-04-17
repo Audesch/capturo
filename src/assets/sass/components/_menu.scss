@@ -59,8 +59,8 @@
     &__darkbtn{
         display: flex;
         position: fixed;
-        bottom: 4vw;
-        right: 4vw;
+        bottom: 50vw;
+        right: 39%;
         z-index: 6;
         }
 }
@@ -94,6 +94,9 @@ body[data-menu] .path_3{
         }
         &__btn{
             display: none;
+        }
+        &__darkbtn{
+            margin-top: -16px;
         }
     }
 } 
