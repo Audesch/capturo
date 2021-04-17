@@ -1,9 +1,8 @@
 @use "utils/variables" as v;
 
 .header{
-    background-color: var(--color-bg);
-    position: relative;
-
+    background-color: var(--color-bg2);
+    
     &::before{
         content: "";
         height: 100vh;
@@ -85,11 +84,25 @@
 }
 
 @media (min-width: 768px){
-    .hero__left{
-        max-width: 80vw;
-
-        &__description{
-            max-width: 55vw;
+    .header{
+        position: fixed;
+        top: 0%;
+        left: 0;
+        z-index: -1;
+        height: 100vh;
+        width: 100%;
+    }
+    .hero{
+        margin-top: 10vh;
+        &__left{
+            max-width: 80vw;
+    
+            &__description{
+                max-width: 55vw;
+            }
+        }
+        &__right__video{
+            margin-top: 5vh;
         }
     }
 }

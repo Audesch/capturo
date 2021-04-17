@@ -22,4 +22,11 @@
     .section__img{
         height: 50vh;
     }
+    .main--landing{
+        position: relative;
+        margin-top: 100vh;
+        background-color: var(--color-bg);
+        z-index: 1;
+        padding-top: 9rem;
+    }
  } 
