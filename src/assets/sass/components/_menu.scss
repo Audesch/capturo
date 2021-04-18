@@ -90,7 +90,9 @@ body[data-menu] .path_3{
             > *{
                 margin-left: 32px;
             }
-
+        }
+        &__logo{
+            margin-top: -8px;
         }
         &__btn{
             display: none;
@@ -101,7 +103,7 @@ body[data-menu] .path_3{
     }
 } 
 
-@media (min-width: 1024px){ 
+@media (min-width: 1250px){ 
     .menu{
         margin-left: 4vw;
         margin-right: 4vw;
@@ -110,8 +112,10 @@ body[data-menu] .path_3{
         justify-content: flex-end;
 
         &__logo{
+            position: absolute;
+            left: 4vw;
+            top: 3rem;
         }
-        
         &__list{
             margin-right: 90px;
             > *{

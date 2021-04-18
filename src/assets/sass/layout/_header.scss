@@ -115,7 +115,7 @@
     }
 }
 
-@media (min-width: 1024px){ 
+@media (min-width: 1250px){ 
 
     .header{
         &__hero{
@@ -124,8 +124,7 @@
             margin-top: -187px;
 
             &__left{
-                margin-left: 4vw;
-                max-width: 100%;
+                margin-left: 8vw;
                 margin-top: 40vh;
 
                 &__description{
