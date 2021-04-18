@@ -62,3 +62,12 @@
         }
     }
 }
+@media (min-width: 1024px){ 
+    .link{
+        &--menu{
+            &:hover{
+                border-bottom:  solid 1px #FFFFFF;
+            }
+        }
+    }
+}

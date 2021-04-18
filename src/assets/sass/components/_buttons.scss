@@ -17,11 +17,13 @@
         }
     }
     &__darkbtn{
+        cursor: pointer;
         display: none;
         background: transparent;
         border: 1px solid var(--color-text);
         color: var(--color-text);
-        padding: 11px 11px;
+        padding: 11px 22px;
+        border-radius: 20px;
         font-family: proxima-nova,sans-serif;
     }
 }
@@ -29,5 +31,12 @@
 @media (min-width: 768px){ 
     .menu__darkbtn{
         display: block;
+    }
+ }
+
+ @media (min-width: 1024px){ 
+    .menu__darkbtn{
+        color: #FFFFFF;
+        border: solid 1px #FFFFFF;
     }
  }
