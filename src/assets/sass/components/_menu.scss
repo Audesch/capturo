@@ -3,7 +3,6 @@
  .menu{
      margin: 0px 6.4vw 0vw 6.4vw;
      padding-top: 32px;
-     background-color: var(--color-bg2);
      display: flex;
      justify-content: space-between;
      position: relative;
@@ -12,7 +11,7 @@
      &::after{
         content: "";
         width: 100vw;
-        background-color: var(--color-text);
+        background-color: #FFFFFF;
         height: 1px;
         position: absolute;
         left: -7.25%;
@@ -23,9 +22,8 @@
 
     &__logo{
         & path{
-            fill: var(--color-text);
-            z-index: 2;
-    }
+            fill: #FFFFFF;
+        }
     }
 
     &__list{
@@ -33,12 +31,14 @@
         list-style: none;
         z-index: 5;
     }
+    
     &__item{
         margin-bottom: 18px;
     }
  }
 
- body[data-menu] .menu { //je peux faire ça ?
+ body[data-menu] .menu {
+
     &__list{
         display: flex;
         flex-direction: column;
@@ -48,8 +48,11 @@
         left: 0;
         height: 100vh;
         width: 100vw;
-        background: var(--color-bg);
+        background: var(--color-bg2);
         padding: 0 16px;
+    }
+    &__burger path {
+        fill: var(--color-text);
     }
     &__item{
         display: flex;
@@ -60,7 +63,7 @@
         display: flex;
         position: fixed;
         bottom: 50vw;
-        right: 39%;
+        right: 34%;
         z-index: 6;
         }
 }
@@ -77,6 +80,9 @@ body[data-menu] .path_3{
     transform: rotate(-45deg) translateX(-13px) translateY(17px);
 }
 
+
+
+/* IPAD */
 @media (min-width: 768px){ 
     .menu{
         display: flex;
@@ -103,6 +109,8 @@ body[data-menu] .path_3{
     }
 } 
 
+
+/* DESKTOP */
 @media (min-width: 1250px){ 
     .menu{
         margin-left: 4vw;

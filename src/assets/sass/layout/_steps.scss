@@ -7,9 +7,10 @@
     position: relative;
     
     &__el{
-        margin-bottom: 9rem;
+        margin-bottom: 6rem;
 
         &__img{
+            margin-top: 1.5rem;
             background-color: blue;
             height: 210px;
             width: 100%;
@@ -32,7 +33,7 @@
         margin: 0 auto;
     }
     .steps{
-        margin: 6rem 4vw 0vw 4vw;
+        margin: 6rem 6.4vw 0vw 6.4vw;
 
         &__el{
             display: flex;
@@ -42,7 +43,7 @@
                 max-width: 50%;
             }
             &__img{
-                height: 285px;
+                height: 15rem;
                 margin-left: 34px;
             }
             &--tuto{
@@ -50,11 +51,17 @@
                 flex-direction: row-reverse;
 
                 & .steps__el__img{ /*! CHANGE THIS */
+                    margin-right: 3rem;
                     margin-left: 0%;
-                    margin-right: 34px;
+                    
                 }
             }
         }
     }
 
  } 
+
+/* IPAD */
+ @media (min-width: 768px){ 
+
+  }

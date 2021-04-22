@@ -13,7 +13,7 @@
     &__burger{
         cursor: pointer;
         path{
-            fill: var(--color-text);
+            fill: #FFFFFF;
         }
     }
     &__darkbtn{
@@ -23,7 +23,7 @@
         border: 1px solid var(--color-text);
         color: var(--color-text);
         padding: 11px 22px;
-        border-radius: 20px;
+        border-radius: 2px;
         font-family: proxima-nova,sans-serif;
     }
 }
@@ -31,6 +31,8 @@
 @media (min-width: 768px){ 
     .menu__darkbtn{
         display: block;
+        color: #FFFFFF;
+        border: #FFFFFF solid 1px;
     }
  }
 

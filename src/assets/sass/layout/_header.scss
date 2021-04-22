@@ -2,11 +2,16 @@
 
 .header{
     background-color: var(--color-bg2);
+    color: #FFFFFF;
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
     
     &::before{
         content: "";
         height: 100vh;
-        background-color: var(--color-text);
+        background-color: #FFFFFF;
         width: 1px;
         position: absolute;
         left: 4vw;
@@ -16,73 +21,52 @@
     &::after{
         content: "";
         height: 100vh;
-        background-color: var(--color-text);
+        background-color: #FFFFFF;
         width: 1px;
         position: absolute;
         right: 4vw;
         top: 0;
         opacity: 0.25;
     }
+}
 
-    &__hero{
-        margin-top: 12vh;
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
     
-        &__left{
-            margin: 6.4vw;
-            position: relative;
-    
-            &::after{
-                content: "";
-                width: 100vw;
-                background-color: #FFFFFF;
-                height: 1px;
-                position: absolute;
-                left: -7.25%;
-                bottom: -85vh;
-                opacity: 0.15;
-                z-index: 3;
-            }
-    
-        }
-        &__right{
-            margin-top: 10vh;
-            position: relative;
-            z-index: 1;
-            filter: brightness(70%);
+    &__headline{
+        margin: 0 6.4vw;
+        position: relative;
+        padding-bottom: 3rem;
 
-            & video{
-                background-repeat: no-repeat;
-                object-fit: cover;
-                object-position: center;
-                height: 70vh;
-                width: 100%; 
-            }
-        }
-        &::before{
-            content: "";
-            height: 99.4%;
-            background-color: #FFFFFF;
-            width: 1px;
-            position: absolute;
-            left: 4vw;
-            top: 0;
-            opacity: 0.15;
-            z-index: 2;
-        }
         &::after{
             content: "";
-            height: 99.4%;
+            width: 100vw;
             background-color: #FFFFFF;
-            width: 1px;
+            height: 1px;
             position: absolute;
-            right: 4vw;
-            top: 0;
-            opacity: 0.15;
+            left: -7.25%;
+            bottom: -32px;
+            opacity: 0.25;
             z-index: 2;
         }
     }
-}
 
+    &__video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            z-index: -1;
+            filter: brightness(60%);
+            background-repeat: no-repeat;
+            object-fit: cover;
+            object-position: center;
+            /* object position pour calbrer*/
+        }
+    }
 
 
 .headline{
@@ -90,56 +74,21 @@
     width: 80vw;
 }
 
+/* IPAD */
 @media (min-width: 768px){
     .header{
         position: fixed;
         top: 0%;
+        left: 0%;
         z-index: -1;
-        height: 100vh;
-        width: 100%;
-
-        &__hero{
-            margin-top: 10vh;
-            &__left{
-                max-width: 80vw;
-                margin-left: 8vw;
-        
-                &__description{
-                    max-width: 55vw;
-                }
-            }
-            &__right__video{
-                margin-top: 5vh;
-            }
-        }
+        overflow: hidden;
+    }
+    .hero{
+        margin-top: 12vh;
     }
 }
 
+/* DESKTOP */
 @media (min-width: 1250px){ 
 
-    .header{
-        &__hero{
-            display: flex;
-            justify-content: space-between;
-            margin-top: -187px;
-
-            &__left{
-                margin-left: 8vw;
-                margin-top: 40vh;
-
-                &__description{
-                    max-width: 40vw;
-                }
-
-            }
-
-            &__right{
-                & video{
-                    margin: 0;
-                    height: 100vh;
-                    width: 50vw;
-                }
-            }
-        }
-    }
 }

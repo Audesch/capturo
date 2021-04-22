@@ -42,16 +42,16 @@
         }
     }
     &--btn{
-        background-color: var(--color-text);
-        color: var(--color-text-offset);
+        background-color: #FFFFFF;
+        color: #323232;
         padding: 10px 30px;
-        border-radius: 20px;
+        border-radius: 2px;
     }
     &--cta{
         background-color: var(--color-text);
         color: var(--color-text-offset);
         padding: 10px 30px;
-        border-radius: 20px; 
+        border-radius: 2px; 
     }
 }
 
@@ -59,6 +59,7 @@
     .link{
         &--menu{
             font-size: 17px;
+            color: #FFFFFF;
         }
     }
 }

@@ -1,5 +1,8 @@
 @use "utils/variables" as v;
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: proxima-nova,sans-serif;
     font-size: 16px;
@@ -35,6 +38,7 @@ body{
     }
     &--bold{
         font-weight: var(--font-semibold);
+        margin-left: -16px;
     }
 }
 
@@ -49,7 +53,7 @@ body{
     font-family: proxima-nova,sans-serif;
 }
 .outline{
-    font-size: 14px;
+    font-size: 16px;
     font-weight: var(--font-regular);
     letter-spacing: 2%;
     text-transform: uppercase;

@@ -1,5 +1,5 @@
 .footer{
-    padding: 16px;
+    padding: 1rem 6.4vw;
     background-color: var(--color-bg2);
 
     &__logo{
@@ -7,7 +7,7 @@
         display: flex;
         justify-content: flex-end;
         border-bottom: solid 0.2px var(--color-details);
-        padding-bottom: 16px;
+        padding-bottom: 17px;
 
         & path{
             fill: var(--color-text);
@@ -16,23 +16,21 @@
 
     &__list{
         list-style: none;
-        padding: 0;
-        margin-bottom: 32px;
+        margin-bottom: 51px;
+        padding-left: 0%;
 
             &--socials{
                 display: flex;
                 
                 & > li{
-                    margin-right: 16px;
-                    margin-top: 16px;
+                    margin-right: 17px;
+                    margin-top: 17px;
                 }
-            }
-            &--app{
-                padding-bottom: 32px;
-                border-bottom: solid 0.2px var(--color-details);
             }
     }
     &__copy{
+        border-top: solid 1px var(--color-details);
+        padding-top: 1.5rem;
         display: flex;
         justify-content: space-between;
         &__dwm path:first-child{
@@ -51,3 +49,14 @@
 
 }
 
+@media (min-width: 768px){
+    .wrapper{
+        display: flex;
+        justify-content: flex-end;
+
+        > *{
+            margin-top: -6rem;
+            margin-left: 6rem;
+        }
+    }
+ }

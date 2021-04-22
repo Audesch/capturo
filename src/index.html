@@ -30,8 +30,8 @@
 
 	<link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
-	<script src="assets/js/main.min.js" defer></script>
-	<link rel="stylesheet" href="assets/css/main.css">
+	<script src="/assets/js/main.min.js" defer></script>
+	<link rel="stylesheet" href="/assets/css/main.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
@@ -88,26 +88,25 @@
 			<button class="btn menu__darkbtn">Dark mode</button>
 		</nav>
 
-		<div class="header__hero header__hero--landing">
-			<div class="header__hero__left">
+		<div class="hero">
+			<div class="hero__headline">
 				<span class="outline">L'app mobile Capturo</span>
-				<h1 class="title title--big">Une&nbsp;nouvelle approche pour votre&nbsp;<span
-						class="title--bold">passion</span>
+				<h1 class="title title--big">Une&nbsp;nouvelle approche pour votre&nbsp;
+					<span class="title--bold">passion</span>
 				</h1>
-				<p class="header__hero__left__description headline">Votre guide photo qui vous accompagne à chaque étape
-					de vos
-					nouvelles expériences
-				</p>
-				<a class="hero__left__btn link link--btn" href="">Découvrir</a>
+				<p class="hero__description headline">Le guide photo qui vous accompagne à chaque étape
+					de vos nouvelles expériences </p>
+				<a class="hero__btn link link--btn" href="#presentation">Découvrir</a>
 			</div>
 
-			<div class="header__hero__right">
-				<video class="hero__right__video" src="assets/images/video.mp4" loop autoplay muted></video>
-			</div>
+			<video class="hero__video" autoplay muted loop>
+				<source src="https://res.cloudinary.com/dadly5rup/video/upload/vc_h264/v1619075544/video_a1xw8p.mp4"
+					type="video/mp4" />
+			</video>
 		</div>
 	</header>
 
-	<main class="main main--landing">
+	<main class="main main--landing" id="presentation">
 		<section class="section section--presentation">
 			<h2 class="section__title title title--middle">Capturo brise les barrières de la photographie et vous donne
 				les outils
@@ -127,7 +126,7 @@
 				<div class="steps__el steps__el--search">
 					<div class="steps__el__container">
 						<div class="steps__svg"></div>
-						<h3 class="title title--small">Trouvez votre prochaine expérience photo</h3>
+						<h3 class="title title--small">Trouvez votre&nbsp;prochaine expérience photo</h3>
 						<p>Naviguez et filtrez votre recherche selon votre niveau et vos envies. Sélectionnez votre
 							tutoriel
 							depuis une catégorie ou une recherche ciblée. Soyez au courant des dernières techniques
@@ -197,8 +196,9 @@
 		</section>
 
 		<section class="section section--app">
-			<h2 class="section__title title title--middle">Commencez dès maintenant.</h2>
-			<a href="" class="link link--cta">Essayer l'app</a>
+			<h2 class="section__title title title--middle">Commencez dès&nbsp;maintenant.</h2>
+			<a href="https://www.figma.com/proto/ilxoAOwj3KiNOnQyyHRFMX/TFA?page-id=113%3A21&node-id=739%3A4987&viewport=-4459%2C-2500%2C0.5504434704780579&scaling=scale-down"
+				target="_blank" class="link link--cta">Essayer l'app</a>
 		</section>
 
 	</main>
@@ -251,21 +251,23 @@
 					</svg></a></li>
 		</ul>
 
-		<div class="footer__project">
-			<span class="footer__app__title outline">Le projet</span>
-			<ul class="footer__list footer__list--project">
-				<li class="footer__item"><a href="ui-kit.html" class="link link--footer">UI-Kit</a></li>
-				<li class="footer__item"><a href="case-study.html" class="link link--footer">Case Study</a></li>
-				<li class="footer__item"><a href="credits.html" class="link link--footer">Crédits</a></li>
-			</ul>
-		</div>
-		<div class="footer__app">
-			<span class="footer__app__title outline">L'application</span>
-			<ul class="footer__list footer__list--app">
-				<li class="footer__item"><a href="#" class="link link--footer">Prototype</a></li>
-				<li class="footer__item"><a href="#" class="link link--footer">App store (prochainement)</a></li>
-				<li class="footer__item"><a href="#" class="link link--footer">Play store (prochainement)</a></li>
-			</ul>
+		<div class="wrapper">
+			<div class="footer__project">
+				<span class="footer__app__title outline">Le projet</span>
+				<ul class="footer__list footer__list--project">
+					<li class="footer__item"><a href="ui-kit.html" class="link link--footer">UI-Kit</a></li>
+					<li class="footer__item"><a href="case-study.html" class="link link--footer">Case Study</a></li>
+					<li class="footer__item"><a href="credits.html" class="link link--footer">Crédits</a></li>
+				</ul>
+			</div>
+			<div class="footer__app">
+				<span class="footer__app__title outline">L'application</span>
+				<ul class="footer__list footer__list--app">
+					<li class="footer__item"><a href="#" class="link link--footer">Prototype</a></li>
+					<li class="footer__item"><a href="#" class="link link--footer">App store (prochainement)</a></li>
+					<li class="footer__item"><a href="#" class="link link--footer">Play store (prochainement)</a></li>
+				</ul>
+			</div>
 		</div>
 		<div class="footer__copy">
 			<small class="copyright">Aude Schaff © </small>

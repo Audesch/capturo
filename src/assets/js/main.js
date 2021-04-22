@@ -39,6 +39,8 @@ function toggleNavigation() {
     }
 }
 
+
+
 // DATE 
 var year = new Date().getFullYear();
 document.querySelector(".copyright").innerHTML = "Aude Schaff © " + year;
