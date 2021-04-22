@@ -6,7 +6,7 @@
      display: flex;
      justify-content: space-between;
      position: relative;
-     z-index: 3;
+     z-index: 6;
      
      &::after{
         content: "";
@@ -95,6 +95,10 @@ body[data-menu] .path_3{
             display: flex;
             > *{
                 margin-left: 32px;
+                
+                &:last-child{
+                    margin-right: 16px;
+                }
             }
         }
         &__logo{
@@ -111,13 +115,17 @@ body[data-menu] .path_3{
 
 
 /* DESKTOP */
-@media (min-width: 1250px){ 
+@media (min-width: 1024px){ 
     .menu{
         margin-left: 4vw;
-        margin-right: 4vw;
+        margin-right: 6.4vw;
         background: none;
         display: flex;
         justify-content: flex-end;
+
+        &::after{
+            left: -4.7%;
+        }
 
         &__logo{
             position: absolute;
@@ -132,6 +140,7 @@ body[data-menu] .path_3{
                     color: #FFFFFF;
                 }
             }
+        }
     }
- }
+
 }

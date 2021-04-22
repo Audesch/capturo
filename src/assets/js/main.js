@@ -2,6 +2,7 @@
 
 // DARK MODE + LOCAL STORAGE
 var buttonMobile = document.querySelector(".menu__darkbtn");
+var lien = document.querySelectorAll(".link--menu");
 buttonMobile.addEventListener("click", dark);
 var attribute = localStorage.getItem("data-theme");
 
@@ -39,7 +40,13 @@ function toggleNavigation() {
     }
 }
 
+for (let i = 0; i < lien.length; i++) {
 
+    lien[i].addEventListener("click", closeMenu);
+    function closeMenu() {
+        document.body.removeAttribute("data-menu");
+    };
+}
 
 // DATE 
 var year = new Date().getFullYear();

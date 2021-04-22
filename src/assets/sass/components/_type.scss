@@ -38,7 +38,6 @@ body{
     }
     &--bold{
         font-weight: var(--font-semibold);
-        margin-left: -16px;
     }
 }
 
@@ -95,7 +94,7 @@ body{
     }
 }
 
-@media (min-width: 1150px){
+@media (min-width: 1024px){
     body{
         font-size: 18px;
     }

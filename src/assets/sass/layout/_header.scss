@@ -47,7 +47,7 @@
             height: 1px;
             position: absolute;
             left: -7.25%;
-            bottom: -32px;
+            bottom: -2vh;
             opacity: 0.25;
             z-index: 2;
         }
@@ -89,6 +89,16 @@
 }
 
 /* DESKTOP */
-@media (min-width: 1250px){ 
+@media (min-width: 1024px){ 
 
+    .hero{
+        margin: 0%;
+        &__headline{
+            max-width: 40%;
+
+            &::after{
+                left: -15.8%;
+    }
+        }
+    }
 }
