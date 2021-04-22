@@ -2,8 +2,8 @@
 
 .section--app{
     padding: 3rem 0vw 6rem 0vw;
-    background-color: grey;
-    color: #FFFFFF;
+    background-color: var(--color-details);
+    color: var(--color-text-offset);
     
     > a {
         margin-left: 6.4vw;

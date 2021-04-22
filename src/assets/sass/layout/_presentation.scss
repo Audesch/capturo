@@ -6,10 +6,11 @@
         padding: 0rem 6.4vw 3rem 6.4vw;
     }
     &__img{
+        width: 87.2%;
         &--presentation{
             height: 70vh;
             margin: 0 6.4vw;
-            background-color: var(--color-primary);
+            object-fit: cover;
         }
     }
     &__intro{
