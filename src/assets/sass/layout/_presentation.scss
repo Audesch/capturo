@@ -6,6 +6,7 @@
         padding: 0rem 6.4vw 3rem 6.4vw;
     }
     &__img{
+        background-color: #f2f2f2;
         width: 87.2%;
         &--presentation{
             height: 70vh;
@@ -49,3 +50,17 @@
         }
     }
   }
+
+  @media (-webkit-min-device-pixel-ratio: 2),       
+(min-resolution: 192dpi) { 
+    .section__img{
+        background-color: #f2f2f2;
+        width: 87.2%;
+        &--presentation{
+            height: 80vh;
+            margin: 0 6.4vw;
+            object-fit: cover;
+        }
+    }
+
+}
