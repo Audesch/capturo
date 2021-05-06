@@ -20,9 +20,20 @@
         z-index: 0;
     }
 
+    &--offset{
+        &::after{
+            background-color: var(--color-text);
+        }
+    }
+
     &__logo{
         & path{
             fill: #FFFFFF;
+        }
+        &--offset{
+            & path{
+                fill: var(--color-text);
+            }
         }
     }
 
@@ -36,6 +47,8 @@
         margin-bottom: 18px;
     }
  }
+
+
 
  body[data-menu] .menu {
 
@@ -109,6 +122,18 @@ body[data-menu] .path_3{
         }
         &__darkbtn{
             margin-top: -16px;
+            
+            &--offset{
+                margin-top: 0%;
+            }
+        }
+        &--offset{
+            display: flex;
+            justify-content: space-between;
+            padding: 48px 0px;
+            &::after{
+                top: 112px;
+            }
         }
     }
 } 

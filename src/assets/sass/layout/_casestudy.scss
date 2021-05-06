@@ -1,0 +1,234 @@
+.strategie, .architecture, .valeurs, .identite, .valeurs__text, .valeurs__container{
+    padding: 0rem 6.4vw 1rem 6.4vw;
+}
+
+.intro{
+    position: relative;
+        padding: 0rem 6.4vw 1rem 6.4vw;
+        margin-top: 0;
+        > * {
+            margin-top: 3rem;
+        }
+        &__contexte{
+            margin-top: 3rem;
+        }
+
+        &__real{
+            display: flex;
+
+            &__headline{
+                max-width: 50%;
+                margin-right: 16px;
+            }
+        }
+}
+
+.section--strategie{
+    margin-top: 6rem;
+}
+.section__title--strategie{
+    max-width: 100%;
+}
+.imgcase{
+    width: 100%;
+    padding-top: 1.5rem;
+
+    &--hero{
+        position: relative;
+        width: 100%;
+        max-height: 590px;
+        object-fit: cover;
+        object-position: top;
+        filter: brightness(80%);
+    }
+    &--strategie{
+        height: 490px;
+        
+    }
+}
+
+.architecture{
+    margin-top: 1.5rem;
+
+    &__img{
+        margin-bottom: 1.5rem;
+    }
+}
+
+.valeurs{
+    background-color: var(--color-bg2);
+    margin: 1.5rem 0;
+    padding: 4.5rem 0rem;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 8px;
+        color: #0442FF;
+
+        &__item{
+            background-color: #fff;
+            height: 12rem;
+            position: relative;
+
+            svg{
+                position: absolute;
+                top: 25%;
+                left: 27%;
+            }
+
+            p{
+                position: absolute;
+                top: 150px;
+                left: 16px;
+                font-size: 14px;
+            }
+        }
+    }
+    &__container__text{
+        margin-bottom: 3rem;
+    }
+}
+.section--identite{
+    margin-top: 9rem;
+}
+.section__title--identite{
+    max-width: 70vw;
+}
+
+/* intermédiaire iphone-ipad */
+@media (min-width: 570px){
+    .intro{
+        margin-top: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap : 1rem;
+
+        > *{
+        margin-top: 0;
+        }
+        
+        &__contexte{
+            grid-row: 1/1;
+            grid-column: 1/1;
+        }
+        &__mission{
+            grid-row: 2/-1;
+            grid-column: 1/1;
+        }
+        &__real{
+            grid-row: 1/-1;
+            grid-column: 2/-1;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .strategie, .architecture__text, .valeurs__container__text, .valeurs__mission{
+        max-width: 367px;
+    }
+    .valeurs__grid{
+        display: flex;
+        font-size: 14px;
+
+        &__item{
+            height: 200px;
+            width: 180px;
+            background-color: #fff;
+        }
+    }
+    .section__title--identite{
+        max-width: 50vw;
+    }
+}
+
+/* IPAD */
+@media (min-width: 768px){
+    .intro{
+        &__real{
+            justify-content: flex-end;
+        }
+    }
+    .architecture{
+        &__text{
+            max-width: 367px;
+        }
+        &__img{
+            width: 100%;
+        }
+    }
+    .valeurs{
+        &__text{
+            max-width: 367px;
+
+            > *{
+                margin-top: 1.5rem;
+                &:first-child{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/* small desktop */
+@media (min-width: 1050px){
+
+    .intro{
+        display: flex;
+
+        > *{
+            max-width: 367px; 
+            margin-right: 6rem;
+        }
+    }
+    .architecture{
+        display: flex;
+        justify-content: space-between;
+
+        &__img{
+            width: 50%;
+        }
+        &__text{
+            margin-right: 3rem;
+        }
+    }
+
+    .case-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+
+            &--identite > *{
+                margin-top: 0%;
+            }
+    }
+    .section__title--identite{
+        padding-right: 0;
+        margin-top: -36px;
+    }
+
+    .strategie{
+        margin-top: 160px;
+        max-width: 100%;
+    }
+ }
+
+@media (min-width: 1370px){ 
+    .valeurs{
+        display: flex;
+        &__grid, &__mission{
+            margin-left: 3rem;
+        }
+        
+        &__grid__item--1 svg, &__grid__item--3 svg{
+            left: 30%;
+        }
+        &__text{
+            padding: 0;
+            padding-left: 6.4vw;
+        }
+    }
+ }

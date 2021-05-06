@@ -45,7 +45,7 @@
             border: 0;
         }
     }
-    &--btn{
+    &--hero{
         background-color: #FFFFFF;
         color: #323232;
         padding: 10px 30px;
@@ -61,20 +61,21 @@
             background-color: #323232;
         }
     }
-    &--cta{
-        background-color: #FFFFFF;
-        color: #323232;
+    &--btn{
+        background-color: #0442FF;
+        color: #FFFFFF;
         padding: 10px 30px;
         border-radius: 2px;
 
                 
         &:hover, &:focus{
-            background-color: #0442FF;
+            background-color: #323232;
             color: #FFFFFF;
             transition: 0.3s;
         }
         &:active{
-            background-color: #323232;
+            background-color: #0442FF;
+            color: #FFFFFF;
         }
     }
 }

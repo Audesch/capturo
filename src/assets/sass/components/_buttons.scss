@@ -27,7 +27,7 @@
         border-radius: 2px;
         font-family: proxima-nova,sans-serif;
 
-        &:hover{
+        &:hover, &:focus{
             background-color: #FFFFFF;
             color: #323232;
             transition: 0.3s;
@@ -37,6 +37,21 @@
             color: #FFFFFF;
             transition: none;
         }
+        &--offset{
+            display: inline;
+            padding: 5px 10px;
+            font-size: 14px;
+            margin-bottom: 5px;
+            &:hover, &:focus{
+                background-color: var(--color-text);
+                color: var(--color-text-offset);
+            }
+            &:active{
+                background-color: #0442FF;
+                color: #FFFFFF;
+                transition: none;
+            }
+        }
     }
 }
 
@@ -45,6 +60,23 @@
         display: block;
         color: #FFFFFF;
         border: #FFFFFF solid 1px;
+
+        &--offset{
+            color: var(--color-text);
+            border: solid 1px var(--color-text);
+            padding: 11px 22px;
+
+            &:hover, &:focus{
+                background-color: #323232;
+                color: #FFFFFF;
+                transition: 0.3s;
+            }
+            &:active{
+                background-color: #0442FF;
+                color: #FFFFFF;
+                transition: none;
+            }
+        }
     }
  }
 
@@ -52,5 +84,22 @@
     .menu__darkbtn{
         color: #FFFFFF;
         border: solid 1px #FFFFFF;
+
+        &--offset{
+            color: var(--color-text);
+            border: solid 1px var(--color-text);
+            padding: 11px 22px;
+
+            &:hover, &:focus{
+                background-color: #323232;
+                color: #FFFFFF;
+                transition: 0.3s;
+            }
+            &:active{
+                background-color: #0442FF;
+                color: #FFFFFF;
+                transition: none;
+            }
+        }
     }
  }

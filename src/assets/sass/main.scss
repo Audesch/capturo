@@ -4,7 +4,7 @@
 ***
 * Option DWM – HEAJ Namur
 *
-* version 1.0
+* version 2.0
 * author: Aude Schaff <audeschaff.be>
 *
 ***
@@ -22,6 +22,7 @@
 @use 'layout/steps';
 @use 'layout/features';
 @use 'layout/app';
+@use 'layout/casestudy';
 
 
 
@@ -72,4 +73,27 @@
    -- Anim lignes grilles
    -- Anim svg steps 
    -- Changer taille menu burger + fermeture au click btn 
+*/
+
+
+/* V2 
+
+  -- Commentaires profs
+      OK -- Changer ratio desktop en 1.44
+      OK -- Changer contraste du bouton
+      -- Changer longueur de lignes
+      -- voir si le temps de changer la landing avec nouvelle version
+      -- rectifier, contenu pour le logo & btn, pas juste svg
+
+  -- Case Study
+    OK  -- Modifier header, delete propriétés landing
+      -- balises picture pour les images (AI, UI-KIT)
+      -- Fix btn js erreur console 
+      -- Faire visuels écrans pour ID visuelle
+      -- Ecrire section personnelle 
+      -- Inclure lien vers User Journey + Dossier Prod (PDF)
+
+  -- UI-KIT & Crédits
+      -- Rapide UI-Kit (amélioration pour v3 stage)
+      -- Crédits 
 */
