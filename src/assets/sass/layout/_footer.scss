@@ -46,7 +46,9 @@
     &__item{
         margin-bottom: 8px;
     }
-
+    &--offset{
+        margin-top: 12rem;
+    }
 }
 
 @media (min-width: 768px){
