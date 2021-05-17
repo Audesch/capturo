@@ -29,23 +29,28 @@ function dark() {
 
 // Burger menu 
 
-let navButton = document.querySelector(".menu__burger");
-navButton.addEventListener("click", toggleNavigation);
+let currentPage = document.querySelector(".menu__burger");
 
-function toggleNavigation() {
-    if (document.body.hasAttribute("data-menu")) {
-        document.body.removeAttribute("data-menu");
-    } else {
-        document.body.setAttribute("data-menu", true);
+if (currentPage != null) {
+    let navButton = document.querySelector(".menu__burger");
+    navButton.addEventListener("click", toggleNavigation);
+
+    function toggleNavigation() {
+        if (document.body.hasAttribute("data-menu")) {
+            document.body.removeAttribute("data-menu");
+        } else {
+            document.body.setAttribute("data-menu", true);
+        }
     }
-}
 
-for (let i = 0; i < lien.length; i++) {
+    for (let i = 0; i < lien.length; i++) {
 
-    lien[i].addEventListener("click", closeMenu);
-    function closeMenu() {
-        document.body.removeAttribute("data-menu");
-    };
+        lien[i].addEventListener("click", closeMenu);
+        function closeMenu() {
+            document.body.removeAttribute("data-menu");
+        };
+    }
+
 }
 
 // DATE 

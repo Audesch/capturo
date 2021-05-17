@@ -1,99 +1,52 @@
 /*!
 ***
-* TFA Project – Capturo
+* Dataplay – Mustang Evolution
 ***
 * Option DWM – HEAJ Namur
 *
-* version 2.0
-* author: Aude Schaff <audeschaff.be>
+* version 1.0
+* author: Aude Schaff <audeschaff.be>, Jérôme Haesen < >, Aureliane Ferard < >
 *
 ***
 */
 
 @use 'components/buttons';
 @use 'components/grids';
-@use 'components/menu';
 @use 'components/type';
 @use 'components/links';
+@use 'components/slider';
 
 @use 'layout/header';
+@use 'layout/menu';
 @use 'layout/footer';
-@use 'layout/presentation';
-@use 'layout/steps';
-@use 'layout/features';
-@use 'layout/app';
-@use 'layout/casestudy';
-
+@use 'layout/lexique';
 
 
 @use 'utils/variables'; 
 
+
+
+
 /* HERE WRITE THINGS TO DO
 
-  -- SETUP
+SETUP
+	OK -- setup HTML et metadata 
+	-- setup architecture SASS
+ 	OK -- setup modern-nomalize
+	OK -- setup gsap 
+	-- setup variables scss
+	-- metashare + favicon modify
 
-  OK  -- fichiers sass 
-  OK  -- metashare + images 
-  OK  -- add favicon
-  OK  -- liens typo
-  OK  -- repo github
-  OK  -- variables 
-  OK  -- type (mobile)
-  OK  -- dark mode (JS/OK + SASS/OK)
-  OK  -- check état focus
-  OK  -- état hover et visité liens footer
+TYPE
+	-- Changer typographie selon design + ratio
 
-  
-  -- VERSION MOBILE
+LANDING ≠ EXPERIENCE COMPARATIVE
+	-- 
 
-  OK  -- setup burger menu
-  OK  -- setup footer
-  OK -- ajouter pointer burger menu
-  OK -- Section steps
-  OK -- Section avantages
-  OK -- Section app
-  -- rectifier timeline (UPDATE: pour V2 peut-être)
+CREDITS
+	-- Ajouter crédits 
 
-  -- TO DO --
-  -- liens hover, focus, pressed (attention underline à changer)
-  -- add max-width content wrapper
-
-  
-  --
-
-    -- BEFORE COMMIT
-    -- W3C verificator
-    -- retina
-
-  -- PLUS
-   -- add aria labels svg - accessibility
-   -- Section présentation -> parallax (possible en css)
-   -- Anim Hover link footer
-   -- Modif Dark mode btn
-   -- Anim lignes grilles
-   -- Anim svg steps 
-   -- Changer taille menu burger + fermeture au click btn 
-*/
-
-
-/* V2 
-
-  -- Commentaires profs
-      OK -- Changer ratio desktop en 1.44
-      OK -- Changer contraste du bouton
-      OK -- Changer longueur de lignes
-      OK -- voir si le temps de changer la landing avec nouvelle version
-      -- rectifier, contenu pour le logo & btn, pas juste svg
-
-  -- Case Study
-    OK  -- Modifier header, delete propriétés landing
-    OK -- balises picture pour les images (AI, UI-KIT)
-      -- Fix btn js erreur console 
-    OK  -- Faire visuels écrans pour ID visuelle
-      -- Ecrire section personnelle 
-      -- Inclure lien vers User Journey + Dossier Prod (PDF)
-
-  -- UI-KIT & Crédits
-      -- Rapide UI-Kit (amélioration pour v3 stage)
-      -- Crédits 
+JS & JSON
+	-- Import JSON dans le projet
+	-- Import GSAP dans projet
 */
